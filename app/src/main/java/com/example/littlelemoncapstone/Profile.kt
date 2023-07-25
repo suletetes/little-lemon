@@ -145,16 +145,10 @@ fun ProfileFormFields(navController: NavController, sharedPreferences: SharedPre
         style = MaterialTheme.typography.body1,
 
         modifier = Modifier
-
             .fillMaxWidth()
-
             .padding(10.dp)
-
             .border(width = 1.dp, color = Color.Gray, RoundedCornerShape(4.dp))
-
-
             .background(color = Color.White)
-
             .padding(14.dp)
 
     )
