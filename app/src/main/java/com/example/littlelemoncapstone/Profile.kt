@@ -87,24 +87,10 @@ fun Profile(navController: NavController, sharedPreferences: SharedPreferences) 
 
 
 @Composable
-
 fun ProfileFormFields(navController: NavController, sharedPreferences: SharedPreferences) {
-
-
     val firstName = sharedPreferences.getString(Constants.firstNameKey, "")
-
     val lastName = sharedPreferences.getString(Constants.lastNameKey, "")
-
     val email = sharedPreferences.getString(Constants.emailKey, "")
-
-
-
-
-
-
-
-
-
 
     Text(
         stringResource(id = R.string.personal_info),
