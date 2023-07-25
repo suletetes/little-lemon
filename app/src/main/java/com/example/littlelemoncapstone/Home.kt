@@ -50,8 +50,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.toLowerCase
-import com.thecons981.littlelemon.ui.theme.LittleLemonTheme
-
+import com.example.littlelemoncapstone.ui.theme.LittleLemonCapstoneTheme
 @Composable
 fun Home(navController: NavController, database: AppDatabase) {
     var searchText by remember { mutableStateOf(TextFieldValue("")) }
