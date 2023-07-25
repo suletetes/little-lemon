@@ -22,8 +22,6 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 
 
-
-
 //import androidx.compose.runtime.*
 //import androidx.compose.ui.graphics.Color
 //import androidx.compose.ui.res.stringResource
@@ -185,12 +183,9 @@ fun ProfileFormFields(navController: NavController, sharedPreferences: SharedPre
 
 
         ) {
-
         Text(
-
             text = stringResource(id = R.string.logout),
-
-            )
+        )
 
     }
 
