@@ -107,43 +107,28 @@ fun ProfileFormFields(navController: NavController, sharedPreferences: SharedPre
 
 
     Text(
-
         stringResource(id = R.string.personal_info),
-
         style = MaterialTheme.typography.h5,
-
         fontWeight = FontWeight.Bold,
-
         modifier = Modifier
-
             .fillMaxWidth()
-
             .padding(start = 10.dp, end = 10.dp, bottom = 10.dp),
 
 
         )
 
     Text(
-
         stringResource(id = R.string.firstName),
-
         style = MaterialTheme.typography.body1,
-
         modifier = Modifier
-
             .fillMaxWidth()
-
             .padding(start = 10.dp, end = 10.dp)
-
 
     )
 
     Text(
-
         firstName!!,
-
         style = MaterialTheme.typography.body1,
-
         modifier = Modifier
             .fillMaxWidth()
             .padding(10.dp)
