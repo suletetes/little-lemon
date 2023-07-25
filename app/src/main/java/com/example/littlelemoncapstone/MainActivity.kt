@@ -11,7 +11,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.compose.rememberNavController
 import androidx.room.Room
-import com.thecons981.littlelemon.ui.theme.LittleLemonTheme
+import com.example.littlelemoncapstone.Constants
+import com.example.littlelemoncapstone.ui.theme.LittleLemonCapstoneTheme
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.engine.android.Android
@@ -44,11 +45,11 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            LittleLemonTheme {
+            LittleLemonCapstoneTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
+                    color = MaterialTheme.colorScheme.background,
                 ) {
 
                     val navController = rememberNavController()
@@ -88,8 +89,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    LittleLemonTheme {
+    LittleLemonCapstoneTheme {
         Greeting("Android")
     }
 }
-34 changes: 34 additions & 0 deletions34
