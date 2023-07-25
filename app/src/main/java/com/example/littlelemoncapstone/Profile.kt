@@ -160,36 +160,22 @@ fun ProfileFormFields(navController: NavController, sharedPreferences: SharedPre
     )
 
     Text(
-
         stringResource(id = R.string.lastName),
-
         style = MaterialTheme.typography.body1,
-
         modifier = Modifier
-
             .fillMaxWidth()
-
             .padding(start = 10.dp, end = 10.dp)
 
     )
 
     Text(
-
         lastName!!,
-
         style = MaterialTheme.typography.body1,
-
         modifier = Modifier
-
             .fillMaxWidth()
-
             .padding(10.dp)
-
             .border(width = 1.dp, color = Color.Gray, RoundedCornerShape(4.dp))
-
-
             .background(color = Color.White)
-
             .padding(14.dp)
 
     )
