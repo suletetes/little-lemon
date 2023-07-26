@@ -1,5 +1,6 @@
 package com.example.littlelemoncapstone
 
+import Greeting
 import android.graphics.BitmapFactory
 import android.graphics.Paint.Align
 import androidx.compose.foundation.Image
@@ -51,6 +52,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.toLowerCase
 import com.example.littlelemoncapstone.ui.theme.LittleLemonCapstoneTheme
+
 @Composable
 fun Home(navController: NavController, database: AppDatabase) {
     var searchText by remember { mutableStateOf(TextFieldValue("")) }
@@ -324,7 +326,7 @@ fun MenuItem(title: String, description: String, price: String, image: String) {
 @Preview(showBackground = true)
 @Composable
 fun HomePreview() {
-    LittleLemonTheme {
+    LittleLemonCapstoneTheme {
         Greeting("Android")
     }
 }
